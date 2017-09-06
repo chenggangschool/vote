@@ -23,11 +23,11 @@ script:
 after_success:
   - cd $TRAVIS_BUILD_DIR
   - cd src
-  - docker build -t "davecss/vote:latest" -t "davecss/vote:1.0.$TRAVIS_BUILD_NUMBER" .
+  - docker build -t "chenggangschool/vote:latest" -t "chenggangschool/vote:1.0.$TRAVIS_BUILD_NUMBER" .
 
 deploy:
   provider: script
   skip_cleanup: true
-  script: docker push davecss/vote
+  script: docker push chenggangschool/vote
   on:
     branch: master
