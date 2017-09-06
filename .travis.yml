@@ -18,7 +18,7 @@ before_script:
   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"; fi'
 
 script: 
-  - echo "do nothing"
+  - echo "do nothing here"
 
 after_success:
   - cd $TRAVIS_BUILD_DIR
