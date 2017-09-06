@@ -10,9 +10,9 @@ services:
 
 install:
   - echo "do nothing"
-  #- cd $TRAVIS_BUILD_DIR
-  #- cd src
-  #- pip install -r requirements.txt
+  # - cd $TRAVIS_BUILD_DIR
+  # - cd src
+  # - pip install -r requirements.txt
 
 before_script:
   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"; fi'
