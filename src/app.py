@@ -8,8 +8,8 @@ import json
 #option_a = os.getenv('OPTION_A', "Apple")
 #option_b = os.getenv('OPTION_B', "Orange")
 
-option_a = os.getenv('OPTION_A', "Java")
-option_b = os.getenv('OPTION_B', ".NET")
+option_a = os.getenv('OPTION_A', "AWS")
+option_b = os.getenv('OPTION_B', "Azure")
 
 hostname = socket.gethostname()
 
